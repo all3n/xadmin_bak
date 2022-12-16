@@ -107,14 +107,14 @@ ip:
 # 文件存储路径
 file:
   mac:
-    path: ~/file/
-    avatar: ~/avatar/
+    path: ${UPLOAD_PATH:/data/xadmin}/file/
+    avatar: ${UPLOAD_PATH:/data/xadmin}/avatar/
   linux:
-    path: /data/xadmin/file/
-    avatar: /data/xadmin/avatar/
+    path: ${UPLOAD_PATH:/data/xadmin}/file/
+    avatar: ${UPLOAD_PATH:/data/xadmin}/avatar/
   windows:
-    path: C:\xadmin\file\
-    avatar: C:\xadmin\avatar\
+    path: ${UPLOAD_PATH:C:\xadmin}\file\
+    avatar: ${UPLOAD_PATH:C:\xadmin}\avatar\
   # 文件大小 /M
   maxSize: 100
   avatarMaxSize: 5

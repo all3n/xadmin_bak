@@ -30,10 +30,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Annotation for mapping HTTP {@code GET} requests onto specific handler
  * methods.
- * <p>
  * 支持匿名访问   GetMapping
- *
- * liaojinlong
  * @see RequestMapping
  */
 @AnonymousAccess

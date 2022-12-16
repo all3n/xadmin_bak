@@ -11,11 +11,11 @@
 *  See the License for the specific language governing permissions and
 *  limitations under the License.
 */
-package ${package}.service;
+package com.devhc.xadmin.service;
 
-import ${package}.domain.${className};
-import ${package}.service.dto.${className}Dto;
-import ${package}.service.dto.${className}QueryCriteria;
+import com.devhc.xadmin.domain.Hello;
+import com.devhc.xadmin.service.dto.HelloDto;
+import com.devhc.xadmin.service.dto.HelloQueryCriteria;
 import org.springframework.data.domain.Pageable;
 import java.util.Map;
 import java.util.List;
@@ -26,9 +26,9 @@ import javax.servlet.http.HttpServletResponse;
 * 
 * @description 服务接口
 * 
-* @date ${date}
+* @date 2022-12-15
 **/
-public interface ${className}Service {
+public interface HelloService {
 
     /**
     * 查询数据分页
@@ -36,40 +36,40 @@ public interface ${className}Service {
     * @param pageable 分页参数
     * @return Map<String,Object>
     */
-    Map<String,Object> queryAll(${className}QueryCriteria criteria, Pageable pageable);
+    Map<String,Object> queryAll(HelloQueryCriteria criteria, Pageable pageable);
 
     /**
     * 查询所有数据不分页
     * @param criteria 条件参数
-    * @return List<${className}Dto>
+    * @return List<HelloDto>
     */
-    List<${className}Dto> queryAll(${className}QueryCriteria criteria);
+    List<HelloDto> queryAll(HelloQueryCriteria criteria);
 
     /**
      * 根据ID查询
-     * @param ${pkChangeColName} ID
-     * @return ${className}Dto
+     * @param id ID
+     * @return HelloDto
      */
-    ${className}Dto findById(${pkColumnType} ${pkChangeColName});
+    HelloDto findById(Long id);
 
     /**
     * 创建
     * @param resources /
-    * @return ${className}Dto
+    * @return HelloDto
     */
-    ${className}Dto create(${className} resources);
+    HelloDto create(Hello resources);
 
     /**
     * 编辑
     * @param resources /
     */
-    void update(${className} resources);
+    void update(Hello resources);
 
     /**
     * 多选删除
     * @param ids /
     */
-    void deleteAll(${pkColumnType}[] ids);
+    void deleteAll(Long[] ids);
 
     /**
     * 导出数据
@@ -77,5 +77,5 @@ public interface ${className}Service {
     * @param response /
     * @throws IOException /
     */
-    void download(List<${className}Dto> all, HttpServletResponse response) throws IOException;
+    void download(List<HelloDto> all, HttpServletResponse response) throws IOException;
 }

@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+bin=`dirname "$0"`
+export APP_DIR=`cd "$bin/"; pwd`
+export PROJECT=xadmin
+export TARGET_DIR=$APP_DIR/target
+
+
+start_gen_app(){
+    local NAME=$1
+    local MOD_DIR=$APP_DIR/xadmin-$NAME
+    mkdir -p $MOD_DIR
+    mkdir -p $MOD_DIR/src/main/sql
+    mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/domain
+    mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/repository
+    mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/rest
+    mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/service
+    mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/service/dto
+    mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/service/impl
+    mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/service/mapstruct
+
+}
+
+
+
+
+
+ACTION=$1
+APP=$2
+FUNLIST=`typeset -f|grep " ()"|awk -F'start_' '{print $2}'|awk '{print $1}'|grep -v "^$"`
+if [[ -z "$ACTION" ]];then
+    echo "$0 action"
+    echo "ACTION LIST:"
+    for FN in $FUNLIST;do
+        VAR_DESC="DESC_$FN"
+        printf "%20s\t%-30s\n" "$FN" "${!VAR_DESC}"
+    done
+    exit
+fi
+shift 1
+ACTIONS=`echo $ACTION|tr ',' ' '`
+
+for AN in ${ACTIONS[@]};do
+    echo "start $AN"
+    eval "start_$AN" $@
+done
+

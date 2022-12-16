@@ -11,20 +11,27 @@
 *  See the License for the specific language governing permissions and
 *  limitations under the License.
 */
-package ${package}.service.mapstruct;
+package com.devhc.xadmin.service.dto;
 
-import com.devhc.xadmin.base.BaseMapper;
-import ${package}.domain.${className};
-import ${package}.service.dto.${className}Dto;
-import org.mapstruct.Mapper;
-import org.mapstruct.ReportingPolicy;
+import lombok.Data;
+import java.io.Serializable;
+import com.alibaba.fastjson.annotation.JSONField;
+import com.alibaba.fastjson.serializer.ToStringSerializer;
 
 /**
 * 
+* @description /
 * 
-* @date ${date}
+* @date 2022-12-15
 **/
-@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface ${className}Mapper extends BaseMapper<${className}Dto, ${className}> {
+@Data
+public class HelloDto implements Serializable {
 
+    /** ID */
+    /** 防止精度丢失 */
+    @JSONField(serializeUsing = ToStringSerializer.class)
+    private Long id;
+
+    /** name */
+    private String name;
 }

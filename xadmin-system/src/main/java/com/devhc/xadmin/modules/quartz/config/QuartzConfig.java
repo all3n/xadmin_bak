@@ -23,8 +23,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 定时任务配置
- * 
- *
  */
 @Configuration
 public class QuartzConfig {

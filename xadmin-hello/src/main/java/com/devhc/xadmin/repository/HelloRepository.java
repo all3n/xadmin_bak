@@ -11,28 +11,16 @@
 *  See the License for the specific language governing permissions and
 *  limitations under the License.
 */
-package ${package}.repository;
+package com.devhc.xadmin.repository;
 
-import ${package}.domain.${className};
+import com.devhc.xadmin.domain.Hello;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 /**
 * 
 * 
-* @date ${date}
+* @date 2022-12-15
 **/
-public interface ${className}Repository extends JpaRepository<${className}, ${pkColumnType}>, JpaSpecificationExecutor<${className}> {
-<#if columns??>
-    <#list columns as column>
-        <#if column.columnKey = 'UNI'>
-    /**
-    * 根据 ${column.capitalColumnName} 查询
-    * @param ${column.columnName} /
-    * @return /
-    */
-    ${className} findBy${column.capitalColumnName}(${column.columnType} ${column.columnName});
-        </#if>
-    </#list>
-</#if>
+public interface HelloRepository extends JpaRepository<Hello, Long>, JpaSpecificationExecutor<Hello> {
 }

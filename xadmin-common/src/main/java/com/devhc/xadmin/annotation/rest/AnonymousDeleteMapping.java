@@ -32,7 +32,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * methods.
  * 支持匿名访问  DeleteMapping
  *
- * liaojinlong
  * @see AnonymousGetMapping
  * @see AnonymousPostMapping
  * @see AnonymousPutMapping

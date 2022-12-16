@@ -30,9 +30,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Annotation for mapping HTTP {@code PUT} requests onto specific handler
  * methods.
- * * 支持匿名访问  PutMapping
+ * 支持匿名访问  PutMapping
  *
- * liaojinlong
  * @see AnonymousGetMapping
  * @see AnonymousPostMapping
  * @see AnonymousPutMapping

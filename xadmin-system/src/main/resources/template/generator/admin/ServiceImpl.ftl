@@ -1,6 +1,4 @@
 /*
-*  Copyright 2019-2020
-*
 *  Licensed under the Apache License, Version 2.0 (the "License");
 *  you may not use this file except in compliance with the License.
 *  You may obtain a copy of the License at
@@ -25,8 +23,8 @@ import EntityExistException;
         </#if>
     </#list>
 </#if>
-import ValidationUtil;
-import FileUtil;
+import com.devhc.xadmin.utils.ValidationUtil;
+import com.devhc.xadmin.utils.FileUtil;
 import lombok.RequiredArgsConstructor;
 import ${package}.repository.${className}Repository;
 import ${package}.service.${className}Service;
@@ -44,8 +42,8 @@ import cn.hutool.core.util.IdUtil;
 </#if>
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import PageUtil;
-import QueryHelp;
+import com.devhc.xadmin.utils.PageUtil;
+import com.devhc.xadmin.utils.QueryHelp;
 import java.util.List;
 import java.util.Map;
 import java.io.IOException;

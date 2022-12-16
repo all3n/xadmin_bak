@@ -30,9 +30,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Annotation for mapping HTTP {@code PATCH} requests onto specific handler
  * methods.
- * * 支持匿名访问    PatchMapping
- *
- * liaojinlong
+ * 支持匿名访问    PatchMapping
  * @see AnonymousGetMapping
  * @see AnonymousPostMapping
  * @see AnonymousPutMapping

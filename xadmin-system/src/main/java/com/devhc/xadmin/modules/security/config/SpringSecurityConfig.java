@@ -47,7 +47,6 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 import java.util.*;
 
 /**
- * 
  */
 @Configuration
 @EnableWebSecurity

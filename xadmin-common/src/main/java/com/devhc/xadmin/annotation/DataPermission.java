@@ -27,9 +27,6 @@ import java.lang.annotation.Target;
  *   2、如果用到了 @OneToOne ，fieldName 和 joinName 都需要填写，拿UserQueryCriteria.class举例:
  *   应该是 @DataPermission(joinName = "dept", fieldName = "id")
  * </p>
- * 
- * 
- * 
  **/
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

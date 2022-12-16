@@ -33,10 +33,10 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableTransactionManagement
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
-public class AppRun {
+public class XAdminApp {
 
     public static void main(String[] args) {
-        SpringApplication springApplication = new SpringApplication(AppRun.class);
+        SpringApplication springApplication = new SpringApplication(XAdminApp.class);
         springApplication.addListeners(new ApplicationPidFileWriter());
         springApplication.run(args);
     }

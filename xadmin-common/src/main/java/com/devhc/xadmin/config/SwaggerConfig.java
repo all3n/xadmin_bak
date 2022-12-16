@@ -45,8 +45,6 @@ import static springfox.documentation.schema.AlternateTypeRules.newRule;
 
 /**
  * api页面 /doc.html
- * 
- * 
  */
 @Configuration
 @EnableSwagger2

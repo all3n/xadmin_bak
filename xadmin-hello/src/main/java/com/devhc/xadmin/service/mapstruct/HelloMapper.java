@@ -11,20 +11,20 @@
 *  See the License for the specific language governing permissions and
 *  limitations under the License.
 */
-package ${package}.service.mapstruct;
+package com.devhc.xadmin.service.mapstruct;
 
 import com.devhc.xadmin.base.BaseMapper;
-import ${package}.domain.${className};
-import ${package}.service.dto.${className}Dto;
+import com.devhc.xadmin.domain.Hello;
+import com.devhc.xadmin.service.dto.HelloDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
 /**
 * 
 * 
-* @date ${date}
+* @date 2022-12-15
 **/
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface ${className}Mapper extends BaseMapper<${className}Dto, ${className}> {
+public interface HelloMapper extends BaseMapper<HelloDto, Hello> {
 
 }

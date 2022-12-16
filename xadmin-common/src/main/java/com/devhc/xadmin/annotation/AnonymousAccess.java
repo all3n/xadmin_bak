@@ -18,7 +18,6 @@ package com.devhc.xadmin.annotation;
 import java.lang.annotation.*;
 
 /**
- * jacky
  *  用于标记匿名访问方法
  */
 @Inherited

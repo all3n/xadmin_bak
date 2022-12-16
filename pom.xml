@@ -13,6 +13,7 @@
         <module>xadmin-system</module>
         <module>xadmin-tools</module>
         <module>xadmin-generator</module>
+        <module>xadmin-hello</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

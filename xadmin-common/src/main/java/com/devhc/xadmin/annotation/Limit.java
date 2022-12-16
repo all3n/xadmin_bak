@@ -22,7 +22,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * jacky
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

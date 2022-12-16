@@ -22,15 +22,12 @@ import java.util.Optional;
 
 /**
  * @description  : 设置审计
- *  : Dong ZhaoYang
- * @date : 2019/10/28
  */
 @Component("auditorAware")
 public class AuditorConfig implements AuditorAware<String> {
 
     /**
      * 返回操作员标志信息
-     *
      * @return /
      */
     @Override
