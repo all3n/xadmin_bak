@@ -1,6 +1,10 @@
 # xadmin
 
-## ADD MENU
+## BUILD
+1. mvn clean package
+1. cd xadmin-ui; npm install; npm run dev
+
+## ADD MODULE
 1. gen code
 ```
 作者名称
@@ -41,4 +45,4 @@ xadmin-ui/src/views/hello
 上级类目
 ```
 3. enable menu in role
-4. 
+

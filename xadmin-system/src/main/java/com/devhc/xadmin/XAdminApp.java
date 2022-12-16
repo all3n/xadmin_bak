@@ -15,9 +15,9 @@
  */
 package com.devhc.xadmin;
 
-import io.swagger.annotations.Api;
 import com.devhc.xadmin.annotation.rest.AnonymousGetMapping;
 import com.devhc.xadmin.utils.SpringContextHolder;
+import io.swagger.annotations.Api;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.ApplicationPidFileWriter;
@@ -34,18 +34,15 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableTransactionManagement
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
 public class XAdminApp {
-
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(XAdminApp.class);
         springApplication.addListeners(new ApplicationPidFileWriter());
         springApplication.run(args);
     }
-
     @Bean
     public SpringContextHolder springContextHolder() {
         return new SpringContextHolder();
     }
-
     /**
      * 访问首页提示
      *

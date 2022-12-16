@@ -26,7 +26,6 @@ import com.devhc.xadmin.modules.system.domain.Dict;
 import com.devhc.xadmin.modules.system.domain.DictDetail;
 import com.devhc.xadmin.modules.system.repository.DictRepository;
 import com.devhc.xadmin.modules.system.service.dto.DictDetailQueryCriteria;
-import com.devhc.xadmin.utils.*;
 import com.devhc.xadmin.modules.system.repository.DictDetailRepository;
 import com.devhc.xadmin.modules.system.service.DictDetailService;
 import com.devhc.xadmin.modules.system.service.dto.DictDetailDto;

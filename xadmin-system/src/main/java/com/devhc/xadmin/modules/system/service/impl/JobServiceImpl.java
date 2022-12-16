@@ -28,7 +28,6 @@ import com.devhc.xadmin.exception.EntityExistException;
 import com.devhc.xadmin.modules.system.domain.Job;
 import com.devhc.xadmin.modules.system.repository.UserRepository;
 import com.devhc.xadmin.modules.system.service.dto.JobQueryCriteria;
-import com.devhc.xadmin.utils.*;
 import com.devhc.xadmin.modules.system.repository.JobRepository;
 import com.devhc.xadmin.modules.system.service.JobService;
 import com.devhc.xadmin.modules.system.service.dto.JobDto;

@@ -24,7 +24,6 @@ import com.devhc.xadmin.utils.PageUtil;
 import com.devhc.xadmin.utils.RedisUtils;
 import com.devhc.xadmin.utils.StringUtils;
 import lombok.extern.slf4j.Slf4j;
-import com.devhc.xadmin.utils.*;
 import org.springframework.data.domain.Pageable;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
@@ -151,7 +150,7 @@ public class OnlineUserService {
      * @return /
      */
     public OnlineUserDto getOne(String key) {
-        return (OnlineUserDto)redisUtils.get(key);
+        return (OnlineUserDto) redisUtils.get(key);
     }
 
     /**

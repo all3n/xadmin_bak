@@ -17,6 +17,7 @@ start_gen_app(){
     mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/service/dto
     mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/service/impl
     mkdir -p $MOD_DIR/src/main/java/com/devhc/xadmin/service/mapstruct
+    cp $APP_DIR/templates/pom.xml $MOD_DIR/
 
 }
 

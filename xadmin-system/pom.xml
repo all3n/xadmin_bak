@@ -35,7 +35,7 @@
     </dependency>
     <dependency>
       <groupId>com.devhc</groupId>
-      <artifactId>xadmin-hello</artifactId>
+      <artifactId>xadmin-app</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <!-- Spring boot websocket -->

@@ -33,7 +33,6 @@ import com.devhc.xadmin.modules.system.repository.RoleRepository;
 import com.devhc.xadmin.modules.system.repository.UserRepository;
 import com.devhc.xadmin.modules.system.service.dto.DeptDto;
 import com.devhc.xadmin.modules.system.service.dto.DeptQueryCriteria;
-import com.devhc.xadmin.utils.*;
 import com.devhc.xadmin.modules.system.repository.DeptRepository;
 import com.devhc.xadmin.modules.system.service.DeptService;
 import com.devhc.xadmin.utils.enums.DataScopeEnum;
